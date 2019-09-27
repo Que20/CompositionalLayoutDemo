@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ru9-va-Rs6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cqh-wa-606">
+            <objects>
+                <viewController id="BAj-Nu-yx0" customClass="ViewController" customModule="CompositionalLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDe-t4-Pzf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3PA-oe-MSS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NHK-OX-twc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62N-CM-3y7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="-423"/>
+        </scene>
+        <!--Replicating AppStore-->
+        <scene sceneID="aOB-BT-RoI">
+            <objects>
+                <navigationController title="Replicating AppStore" id="Ru9-va-Rs6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mXQ-E0-qyr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BAj-Nu-yx0" kind="relationship" relationship="rootViewController" id="fZe-gE-OPT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IE2-2b-USb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="-422"/>
+        </scene>
+    </scenes>
+</document>
